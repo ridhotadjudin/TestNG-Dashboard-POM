@@ -155,7 +155,7 @@ public class TestLoginUser {
 		String file = "<img src='file://" + screenShot() + "'height=\"450\" width=\"1017\"/>";
 		Reporter.log(file);
 
-		// verify login failed user and pass empty
+		// verify forgot password
 		Assert.assertEquals(forgot.getForgotPasswordValue(), "Send a link to reset the password");
 		try {
 			forgot.getForgotPasswordValue();
