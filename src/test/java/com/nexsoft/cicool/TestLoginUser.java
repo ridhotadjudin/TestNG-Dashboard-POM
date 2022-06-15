@@ -102,7 +102,6 @@ public class TestLoginUser {
 	
 	@Test(priority = 3)
 	public void testLogin_usernameNotValid_passwordNotValid() {
-//		driver.get("http://localhost/cicool/");
 		HomePage home = PageFactory.initElements(driver, HomePage.class);
 		SignInPage signin = home.clickSignIn();
 		Dashboard dashboard = signin.loginValidUser("123@gmail.com", "ridho");
@@ -124,7 +123,6 @@ public class TestLoginUser {
 	
 	@Test(priority = 4)
 	public void testLogin_usernameEmpty_passwordEmpty() {
-//		driver.get("http://localhost/cicool/");
 		HomePage home = PageFactory.initElements(driver, HomePage.class);
 		
 		SignInPage signin = home.clickSignIn();
@@ -137,7 +135,7 @@ public class TestLoginUser {
 		Reporter.log(file);
 
 		// verify login failed user and pass empty
-		Assert.assertEquals(signin.getErrorEmptyUsernamePassword(), "The Username field is required.");
+		Assert.assertEquals(signin.getErrorEmptyUsernamePassword(), "uname and pass catch");
 		try {
 			dashboard.getUsername();
 		} catch (Exception e) {
@@ -164,29 +162,5 @@ public class TestLoginUser {
 		} catch (Exception e) {
 			assertTrue(true, "Text not found " + e.getMessage());
 		}
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	@Test(enabled = false)
-	public void testLogin() {
-//		HomePage home = new HomePage(driver); TANPA PAGE FACTORY
-//		
-//		HomePage home = PageFactory.initElements(driver, HomePage.class);
-//		
-//		SignInPage formSignIn = home.clickSignIn();
-//		Dashboard dashboard = formSignIn.loginValidUser("ridhotadjudin@gmail.com", "123456");
-//		dashboard.clickCrudBuilder().clickSeeButtonWithTitle("Absensi");
-//		
-//		home.clickSignIn().loginValidUser("ridhotadjudin@gmail.com", "123456").clickCrudBuilder().clickSeeButtonWithTitle("Absensi");
-//		
-//		String homeText = driver.findElement(By.xpath("//*[@id=\"app\"]/header/nav/div/ul/li[3]/a/span")).getText();
-//		Assert.assertTrue(homeText.toLowerCase().contains("ridho"));
-//		delayMS(1000);
 	}
 }

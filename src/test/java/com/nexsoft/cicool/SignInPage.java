@@ -33,7 +33,10 @@ public class SignInPage {
 	private WebElement errorUsernamePassword;
 	
 	@FindBy(xpath = "//p[normalize-space()='The Username field is required.']" )
-	private WebElement errorEmptyUsernamePassword;
+	private WebElement errorEmptyUsernamePassword1;
+	
+	@FindBy(xpath = "//p[normalize-space()='The Password field is required.']" )
+	private WebElement errorEmptyUsernamePassword2;
 	
 	@FindBy(xpath = "//a[normalize-space()='I forgot my password.']" )
 	private WebElement forgotPassword;
@@ -57,7 +60,13 @@ public class SignInPage {
 	}
 	
 	public String getErrorEmptyUsernamePassword() {
-		return errorEmptyUsernamePassword.getText();
+		String hasil = null;
+		String teksSatu = errorEmptyUsernamePassword1.getText();
+		String teksDua = errorEmptyUsernamePassword2.getText();
+		if(teksSatu.equalsIgnoreCase("The Username field is required.") && teksDua.equalsIgnoreCase("The Password field is required.")){
+			hasil = "uname and pass catch";
+		}
+		return hasil;
 	}
 	
 	public ForgotPasswordPage clickForgotPassword() {
