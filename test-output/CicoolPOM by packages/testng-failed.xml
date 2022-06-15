@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CicoolPOM by packages]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="com.nexsoft.cicool(failed)">
+    <classes>
+      <class name="com.nexsoft.cicool.LoginFunctionality">
+        <methods>
+          <include name="testLogin_usernameValid_passwordNotValid"/>
+          <include name="init"/>
+          <include name="cekSession"/>
+        </methods>
+      </class> <!-- com.nexsoft.cicool.LoginFunctionality -->
+      <class name="com.nexsoft.cicool.TestLoginUser">
+        <methods>
+          <include name="init"/>
+          <include name="testLoginWithValidUserAndPassword"/>
+          <include name="testLoginWithValidUserAndWrongPassword"/>
+          <include name="cekSession"/>
+        </methods>
+      </class> <!-- com.nexsoft.cicool.TestLoginUser -->
+    </classes>
+  </test> <!-- com.nexsoft.cicool(failed) -->
+</suite> <!-- Failed suite [CicoolPOM by packages] -->
