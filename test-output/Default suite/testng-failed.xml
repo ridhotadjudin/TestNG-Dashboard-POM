@@ -6,8 +6,12 @@
       <class name="com.nexsoft.cicool.TestLoginUser">
         <methods>
           <include name="testforgotPassword"/>
+          <include name="testLogin_usernameEmpty_passwordEmpty"/>
+          <include name="testLogin_usernameNotValid_passwordNotValid"/>
+          <include name="testLogin_usernameValid_passwordNotValid"/>
           <include name="init"/>
           <include name="cekSession"/>
+          <include name="testLogin_usernameValid_passwordValid"/>
         </methods>
       </class> <!-- com.nexsoft.cicool.TestLoginUser -->
     </classes>

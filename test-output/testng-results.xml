@@ -1,86 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[<img src='file://D:\selenium-workspace\CicoolPOM\hasilScreenshot\20220615_215651.png'height="450" width="1017"/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src='file://D:\selenium-workspace\CicoolPOM\hasilScreenshot\20220615_215655.png'height="450" width="1017"/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src='file://D:\selenium-workspace\CicoolPOM\hasilScreenshot\20220615_215657.png'height="450" width="1017"/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src='file://D:\selenium-workspace\CicoolPOM\hasilScreenshot\20220615_215659.png'height="450" width="1017"/>]]>
-    </line>
-    <line>
-      <![CDATA[<img src='file://D:\selenium-workspace\CicoolPOM\hasilScreenshot\20220615_215702.png'height="450" width="1017"/>]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-06-15T21:56:44 ICT" name="Default suite" finished-at="2022-06-15T21:57:02 ICT" duration-ms="17624">
+  <suite started-at="2022-08-20T21:23:13 ICT" name="Default suite" finished-at="2022-08-20T21:23:44 ICT" duration-ms="31274">
     <groups>
     </groups>
-    <test started-at="2022-06-15T21:56:44 ICT" name="Default test" finished-at="2022-06-15T21:57:02 ICT" duration-ms="17624">
+    <test started-at="2022-08-20T21:23:13 ICT" name="Default test" finished-at="2022-08-20T21:23:44 ICT" duration-ms="31274">
       <class name="com.nexsoft.cicool.TestLoginUser">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.nexsoft.cicool.TestLoginUser@73e22a3d]" started-at="2022-06-15T21:56:44 ICT" name="init" finished-at="2022-06-15T21:56:48 ICT" duration-ms="3672" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.nexsoft.cicool.TestLoginUser@52b1beb6]" started-at="2022-08-20T21:23:13 ICT" name="init" finished-at="2022-08-20T21:23:21 ICT" duration-ms="8384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="cekSession()[pri:0, instance:com.nexsoft.cicool.TestLoginUser@73e22a3d]" started-at="2022-06-15T21:56:48 ICT" name="cekSession" finished-at="2022-06-15T21:56:48 ICT" duration-ms="328" status="PASS">
+        <test-method is-config="true" signature="cekSession()[pri:0, instance:com.nexsoft.cicool.TestLoginUser@52b1beb6]" started-at="2022-08-20T21:23:21 ICT" name="cekSession" finished-at="2022-08-20T21:23:22 ICT" duration-ms="1281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cekSession -->
-        <test-method signature="testLogin_usernameValid_passwordValid()[pri:1, instance:com.nexsoft.cicool.TestLoginUser@73e22a3d]" started-at="2022-06-15T21:56:48 ICT" name="testLogin_usernameValid_passwordValid" finished-at="2022-06-15T21:56:51 ICT" duration-ms="3300" status="PASS">
+        <test-method signature="testLogin_usernameValid_passwordValid()[pri:1, instance:com.nexsoft.cicool.TestLoginUser@52b1beb6]" started-at="2022-08-20T21:23:22 ICT" name="testLogin_usernameValid_passwordValid" finished-at="2022-08-20T21:23:27 ICT" duration-ms="4450" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[<img src='file://D:\selenium-workspace\CicoolPOM\hasilScreenshot\20220615_215651.png'height="450" width="1017"/>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testLogin_usernameValid_passwordValid -->
-        <test-method is-config="true" signature="cekSession()[pri:0, instance:com.nexsoft.cicool.TestLoginUser@73e22a3d]" started-at="2022-06-15T21:56:51 ICT" name="cekSession" finished-at="2022-06-15T21:56:52 ICT" duration-ms="397" status="PASS">
+        <test-method is-config="true" signature="cekSession()[pri:0, instance:com.nexsoft.cicool.TestLoginUser@52b1beb6]" started-at="2022-08-20T21:23:27 ICT" name="cekSession" finished-at="2022-08-20T21:23:28 ICT" duration-ms="735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cekSession -->
-        <test-method signature="testLogin_usernameValid_passwordNotValid()[pri:2, instance:com.nexsoft.cicool.TestLoginUser@73e22a3d]" started-at="2022-06-15T21:56:52 ICT" name="testLogin_usernameValid_passwordNotValid" finished-at="2022-06-15T21:56:55 ICT" duration-ms="2915" status="PASS">
+        <test-method signature="testLogin_usernameValid_passwordNotValid()[pri:2, instance:com.nexsoft.cicool.TestLoginUser@52b1beb6]" started-at="2022-08-20T21:23:28 ICT" name="testLogin_usernameValid_passwordNotValid" finished-at="2022-08-20T21:23:31 ICT" duration-ms="3718" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[<img src='file://D:\selenium-workspace\CicoolPOM\hasilScreenshot\20220615_215655.png'height="450" width="1017"/>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testLogin_usernameValid_passwordNotValid -->
-        <test-method is-config="true" signature="cekSession()[pri:0, instance:com.nexsoft.cicool.TestLoginUser@73e22a3d]" started-at="2022-06-15T21:56:55 ICT" name="cekSession" finished-at="2022-06-15T21:56:55 ICT" duration-ms="306" status="PASS">
+        <test-method is-config="true" signature="cekSession()[pri:0, instance:com.nexsoft.cicool.TestLoginUser@52b1beb6]" started-at="2022-08-20T21:23:31 ICT" name="cekSession" finished-at="2022-08-20T21:23:32 ICT" duration-ms="660" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cekSession -->
-        <test-method signature="testLogin_usernameNotValid_passwordNotValid()[pri:3, instance:com.nexsoft.cicool.TestLoginUser@73e22a3d]" started-at="2022-06-15T21:56:55 ICT" name="testLogin_usernameNotValid_passwordNotValid" finished-at="2022-06-15T21:56:57 ICT" duration-ms="2016" status="PASS">
+        <test-method signature="testLogin_usernameNotValid_passwordNotValid()[pri:3, instance:com.nexsoft.cicool.TestLoginUser@52b1beb6]" started-at="2022-08-20T21:23:32 ICT" name="testLogin_usernameNotValid_passwordNotValid" finished-at="2022-08-20T21:23:34 ICT" duration-ms="2520" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[<img src='file://D:\selenium-workspace\CicoolPOM\hasilScreenshot\20220615_215657.png'height="450" width="1017"/>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testLogin_usernameNotValid_passwordNotValid -->
-        <test-method is-config="true" signature="cekSession()[pri:0, instance:com.nexsoft.cicool.TestLoginUser@73e22a3d]" started-at="2022-06-15T21:56:57 ICT" name="cekSession" finished-at="2022-06-15T21:56:58 ICT" duration-ms="535" status="PASS">
+        <test-method is-config="true" signature="cekSession()[pri:0, instance:com.nexsoft.cicool.TestLoginUser@52b1beb6]" started-at="2022-08-20T21:23:34 ICT" name="cekSession" finished-at="2022-08-20T21:23:35 ICT" duration-ms="577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cekSession -->
-        <test-method signature="testLogin_usernameEmpty_passwordEmpty()[pri:4, instance:com.nexsoft.cicool.TestLoginUser@73e22a3d]" started-at="2022-06-15T21:56:58 ICT" name="testLogin_usernameEmpty_passwordEmpty" finished-at="2022-06-15T21:56:59 ICT" duration-ms="1862" status="PASS">
+        <test-method signature="testLogin_usernameEmpty_passwordEmpty()[pri:4, instance:com.nexsoft.cicool.TestLoginUser@52b1beb6]" started-at="2022-08-20T21:23:35 ICT" name="testLogin_usernameEmpty_passwordEmpty" finished-at="2022-08-20T21:23:38 ICT" duration-ms="2504" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[<img src='file://D:\selenium-workspace\CicoolPOM\hasilScreenshot\20220615_215659.png'height="450" width="1017"/>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testLogin_usernameEmpty_passwordEmpty -->
-        <test-method is-config="true" signature="cekSession()[pri:0, instance:com.nexsoft.cicool.TestLoginUser@73e22a3d]" started-at="2022-06-15T21:56:59 ICT" name="cekSession" finished-at="2022-06-15T21:57:00 ICT" duration-ms="371" status="PASS">
+        <test-method is-config="true" signature="cekSession()[pri:0, instance:com.nexsoft.cicool.TestLoginUser@52b1beb6]" started-at="2022-08-20T21:23:38 ICT" name="cekSession" finished-at="2022-08-20T21:23:38 ICT" duration-ms="544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cekSession -->
-        <test-method signature="testforgotPassword()[pri:5, instance:com.nexsoft.cicool.TestLoginUser@73e22a3d]" started-at="2022-06-15T21:57:00 ICT" name="testforgotPassword" finished-at="2022-06-15T21:57:02 ICT" duration-ms="1831" status="PASS">
+        <test-method signature="testforgotPassword()[pri:5, instance:com.nexsoft.cicool.TestLoginUser@52b1beb6]" started-at="2022-08-20T21:23:38 ICT" name="testforgotPassword" finished-at="2022-08-20T21:23:43 ICT" duration-ms="4979" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[<img src='file://D:\selenium-workspace\CicoolPOM\hasilScreenshot\20220615_215702.png'height="450" width="1017"/>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testforgotPassword -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.nexsoft.cicool.TestLoginUser@52b1beb6]" started-at="2022-08-20T21:23:43 ICT" name="close" finished-at="2022-08-20T21:23:44 ICT" duration-ms="796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
       </class> <!-- com.nexsoft.cicool.TestLoginUser -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -16,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -68,8 +69,8 @@ public class TestLoginUser {
 		
 		delayMS(500);
 		// take screenshot
-		String file = "<img src='file://" + screenShot() + "'height=\"450\" width=\"1017\"/>";
-		Reporter.log(file);
+//		String file = "<img src='file://" + screenShot() + "'height=\"450\" width=\"1017\"/>";
+//		Reporter.log(file);
 
 		// verify login success
 		Assert.assertEquals(dash.getUsername(), "Ridho");
@@ -88,8 +89,8 @@ public class TestLoginUser {
 		jsExe.executeScript("window.scrollBy(0, 100)", "");
 		
 		// take screenshot
-		String file = "<img src='file://" + screenShot() + "'height=\"450\" width=\"1017\"/>";
-		Reporter.log(file);
+//		String file = "<img src='file://" + screenShot() + "'height=\"450\" width=\"1017\"/>";
+//		Reporter.log(file);
 
 		// verify login failed do not match
 		Assert.assertEquals(signin.getErrorPassword(), "E-mail Address and Password do not match.");
@@ -109,8 +110,8 @@ public class TestLoginUser {
 		delayMS(500);
 		jsExe.executeScript("window.scrollBy(0, 100)", "");
 		
-		String file = "<img src='file://" + screenShot() + "'height=\"450\" width=\"1017\"/>";
-		Reporter.log(file);
+//		String file = "<img src='file://" + screenShot() + "'height=\"450\" width=\"1017\"/>";
+//		Reporter.log(file);
 
 		// verify login failed user doesn't exist
 		Assert.assertEquals(signin.getErrorUsernamePassword(), "User does not exist");
@@ -131,8 +132,8 @@ public class TestLoginUser {
 		delayMS(500);
 		jsExe.executeScript("window.scrollBy(0, 100)", "");
 		
-		String file = "<img src='file://" + screenShot() + "'height=\"450\" width=\"1017\"/>";
-		Reporter.log(file);
+//		String file = "<img src='file://" + screenShot() + "'height=\"450\" width=\"1017\"/>";
+//		Reporter.log(file);
 
 		// verify login failed user and pass empty
 		Assert.assertEquals(signin.getErrorEmptyUsernamePassword(), "uname and pass catch");
@@ -152,8 +153,8 @@ public class TestLoginUser {
 		delayMS(500);
 		jsExe.executeScript("window.scrollBy(0, 100)", "");
 		
-		String file = "<img src='file://" + screenShot() + "'height=\"450\" width=\"1017\"/>";
-		Reporter.log(file);
+//		String file = "<img src='file://" + screenShot() + "'height=\"450\" width=\"1017\"/>";
+//		Reporter.log(file);
 
 		// verify forgot password
 		Assert.assertEquals(forgot.getForgotPasswordValue(), "Send a link to reset the password");
@@ -162,5 +163,12 @@ public class TestLoginUser {
 		} catch (Exception e) {
 			assertTrue(true, "Text not found " + e.getMessage());
 		}
+		
+		delayMS(3000);
+	}
+	
+	@AfterTest
+	public void close(){
+		driver.quit();
 	}
 }

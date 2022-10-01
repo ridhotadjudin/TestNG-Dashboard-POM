@@ -12,14 +12,9 @@ public class SignInPage {
 		this.driver = driver;
 	}
 	
-	//tanpa page factory
-//	private By email = By.xpath("//input[@placeholder='Email']");
-//	private By password = By.xpath("//input[@placeholder='Password']");
-//	private By btnSignIn = By.xpath("//button[@type='submit']");
-	
 	@FindBy(xpath = "//input[@placeholder='Email']")
 	private WebElement email;
-	
+
 	@FindBy(xpath = "//input[@placeholder='Password']")
 	private WebElement password;
 	
